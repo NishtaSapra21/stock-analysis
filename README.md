@@ -6,6 +6,6 @@
 ## Result
 
 ## Summary
-  -Advantages and Disadvanteges of Refactoring Code
+  - Advantages and Disadvanteges of Refactoring Code
   
-  -Advantagesand Disadvantagesof Originaland Refactored VBA Scripts
+  - Advantagesand Disadvantagesof Originaland Refactored VBA Scripts
