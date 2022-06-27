@@ -13,7 +13,7 @@ In 2017, "DQ" gave highest return of 199.4%.
 
 In 2018, most of the stocks couldn't performed well and gave negative returns except "ENPH" and "RUN". They both gave more than 80% return and "RUN" made to top by 84%. Also, based on "Total Daily Volumes", number of stocks traded in  2018 are less compared to 2017. 
 
-![StockAnalysis_2018](https://user-images.githubusercontent.com/107717882/175851838-d34c8090-c57a-47f9-9544-a6da50010de4.png)
+![StockAnalysis_2018]<img src = "https://user-images.githubusercontent.com/107717882/175851838-d34c8090-c57a-47f9-9544-a6da50010de4.png", width="300" height="300">
 
 - **Original Script VS Refactored Script**
 
