@@ -20,13 +20,17 @@ In 2018, most of the stocks couldn't performed well and gave negative returns ex
 
 - **Original Script VS Refactored Script**
 
-From bleow images, it is clear that refactored code takes less execution time than original code.
+From bleow images, it is clear that refactored code takes less execution time than original code. For socks analysis 2017; original scripts takes 0.89 sec whereas refactored script takes 0.14 sec. For socks analysis 2018; original scripts takes 0.96 sec whereas refactored script takes 0.27 sec. Execution times varies depending on how many programs and background processes running simultaneously by OS but refactored time is always less than original. 
 
-![VBA_Challenge_2017](https://user-images.githubusercontent.com/107717882/176259867-9e1fe757-71d5-4248-b551-0004218f57e9.png)
+![AllStockAnalysis2017](https://user-images.githubusercontent.com/107717882/176264181-4ba46f17-c588-4c40-be80-5aad8f0902a1.png)
+
+![AllStockAnalysis2018](https://user-images.githubusercontent.com/107717882/176264233-a87232d9-91f2-45a5-b405-c835c06e61c5.png)
 
 In original code we are excuting nested loops, for each ticker in array we are lopping over all rows; for 12 tickers; appx 3000 rows. We are excuting same code 36000 times. 
 
-![VBA_Challenge_2018](https://user-images.githubusercontent.com/107717882/176259987-ba2d8aef-55d8-40c7-b5c3-30c92baf85c6.png)
+![VBA_Challenge_2017](https://user-images.githubusercontent.com/107717882/176264374-07f93030-e3a6-48cc-836d-84582fe9c834.png)
+
+![VBA_Challenge_2018](https://user-images.githubusercontent.com/107717882/176264580-08057562-46d9-439f-aec5-2ac260d59dac.png)
 
 Looking at the refactored code, it is obvious that loop is executing only once for all rows in dataset. Here, **tickers** array and **Ticker** column
 in years(2017/2018) dataset are sorted so refactred code works most efficiently. The ticker index incremented when we moved to next ticker in row with improved 
