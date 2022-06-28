@@ -32,33 +32,33 @@ In original code we are excuting nested loops, for each ticker in array we are l
 
 ![VBA_Challenge_2018](https://user-images.githubusercontent.com/107717882/176264580-08057562-46d9-439f-aec5-2ac260d59dac.png)
 
-Looking at the refactored code, it is obvious that loop is executing only once for all rows in dataset. Here, **tickers** array and **Ticker** column
+Looking at the refactored code, it is obvious that loop is executing only once  for all rows in dataset. Here, **tickers** array and **Ticker** column
 in years(2017/2018) dataset are sorted so refactred code works most efficiently. The ticker index incremented when we moved to next ticker in row with improved 
 logic of code. Total volumes, starting prices and ending prices are stored in corsponding arrays using ticker index. 
 
 ## Summary
 - __**Advantages and Disadvanteges of Refactoring Code**__
   
-The advantages of refactoring codes are easier readability, less complexity and easier maintaiblity. A new user can easily read the refactored code as there is no complex flow of code. Easier readable code is easier to fix bugs and errors. Adding new features, unpdate old features and maintain code is much more easy and reliable.
+The advantages of refactoring codes are easier readability, less complexity and easier maintainability. A new user can easily read the refactored code as there is no complex flow of code. Easier readable code is easier to fix bugs and errors. Adding new features, unpdate old features and maintain code is much more easy and reliable.
 
-On the other side, refactoring is time consuming, specifically for very large codes. Refactoring code increases speed of excusion but sometimes it takes more 
+On the other side, refactoring is time consuming, specifically for very large codes. Refactoring code increases speed of execusion but sometimes it takes more 
 memory. Sometimes refactoring works only on some specific dataset , but fails on larger dataset and this can be lead to new bugs or errors. 
   
 - __**Advantagesand Disadvantagesof Originaland Refactored VBA Scripts**__
   
-Look at refactored All Stocks Analysis, excution time is less as there's only one loop, whereas in originalcode there are nested lopps which take more 
-ececution time.
+Look at refactored All Stocks Analysis, execution time is less as there's only one loop, whereas in original code there are nested lopps which take more 
+execution time.
 
-Considering refactored VBA script, we have more easy and specific names to variables that we dont have in original code. 
+Considering refactored VBA script, we have more easy and specific names to variables that we don't have in original code. 
 
-In original VBA code, all calculatiions performed during looping and stored in temporary variables and ouput directy to data sheet. If we want to get total volume of "RUN" stock for future use, we won't have it, it is calculated, oputputed but not stored.
+In original VBA code, all calculations performed during loop and stored in temporary variables and ouput directy to data sheet. If we want to get total volume of "RUN" stock for future use, we won't have it, it is calculated, oputputed but not stored.
 
-In refactored code we ovrcome this, we defined arrays of toalvolumes, starting prices, ending prices for each tickers. This makes us to use values for future calculatoins.
+In refactored code we overcome this, we defined arrays of toalvolumes, starting prices, ending prices for each tickers. This makes us to use values for future calculatoins.
 
-Memeory space using by arrays are more than temporiry variables but it is negotiable as we are getting clean, efficient, easily readable code with less execution
+Memeory space using by arrays are more than temporary variables but it is negotiable as we are getting clean, efficient, easily readable code with less execution
 time.
 
-Our dataset is sorted on **"Ticker"** as well as out **"tickers"** array in code; so CPU calculating very fast returns. But either of these or both are not sorted or someone added one more ticker at the end of array/dataset, then it will be errorsum calculation or execution. We must sort these two before execution.
+Our dataset is sorted on **"Ticker"** as well as on **"tickers"** array in code; that is the reason CPU calculation is very fast. If either of these or both are not sorted or someone added one more ticker at the end of array/dataset, then it will be errorsum calculation or execution. We must sort these two before execution.
  
 This is really small dataset compared to real word data, so refacroing is easy. For larger dataset, it will be time consuming. 
 
