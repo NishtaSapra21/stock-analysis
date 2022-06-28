@@ -1,13 +1,13 @@
 # Refactoring VBA Code
-## Project Overview
 
+## Project Overview
 ### Purpose
 Refactoring VBA script, prepared to analyze all stocks data over last few years, to achieve more effecient code implementaton 
 using improved logic that takes less CPU time and RAM space. 
 
 ## Result
 
-- **2017 VS 2018**
+- __**2017 VS 2018**__
 
 In 2017, most of the stocks have performed well and gave positive returns except "TERP". Also, based on "Total Daily Volumes",number of stocks traded more in 2017. 
 In 2017, "DQ" gave highest return of 199.4%.
@@ -18,7 +18,7 @@ In 2018, most of the stocks couldn't performed well and gave negative returns ex
 
 ![StockAnalysis_2018](https://user-images.githubusercontent.com/107717882/176259255-93a77ac3-5ec2-4bbd-ac59-ea60e88fd3c7.png)
 
-- **Original Script VS Refactored Script**
+- __**Original Script VS Refactored Script**__
 
 From bleow images, it is clear that refactored code takes less execution time than original code. For socks analysis 2017; original scripts takes 0.89 sec whereas refactored script takes 0.14 sec. For socks analysis 2018; original scripts takes 0.96 sec whereas refactored script takes 0.27 sec. Execution times varies depending on how many programs and background processes running simultaneously by OS but refactored time is always less than original. 
 
@@ -37,14 +37,14 @@ in years(2017/2018) dataset are sorted so refactred code works most efficiently.
 logic of code. Total volumes, starting prices and ending prices are stored in corsponding arrays using ticker index. 
 
 ## Summary
-  - Advantages and Disadvanteges of Refactoring Code
+- __**Advantages and Disadvanteges of Refactoring Code**__
   
 The advantages of refactoring codes are easier readability, less complexity and easier maintaiblity. A new user can easily read the refactored code as there is no complex flow of code. Easier readable code is easier to fix bugs and errors. Adding new features, unpdate old features and maintain code is much more easy and reliable.
 
 On the other side, refactoring is time consuming, specifically for very large codes. Refactoring code increases speed of excusion but sometimes it takes more 
 memory. Sometimes refactoring works only on some specific dataset , but fails on larger dataset and this can be lead to new bugs or errors. 
   
-  - Advantagesand Disadvantagesof Originaland Refactored VBA Scripts
+- __**Advantagesand Disadvantagesof Originaland Refactored VBA Scripts**__
   
 Look at refactored All Stocks Analysis, excution time is less as there's only one loop, whereas in originalcode there are nested lopps which take more 
 ececution time.
@@ -58,7 +58,7 @@ In refactored code we ovrcome this, we defined arrays of toalvolumes, starting p
 Memeory space using by arrays are more than temporiry variables but it is negotiable as we are getting clean, efficient, easily readable code with less execution
 time.
 
-Our dataset is sorted on **"Ticker"** as well as out **"tickers"**array in code; so CPU calculating very fast returns. But either of these or both are not sorted or someone added one more ticker at the end of array/dataset, then it will be errorsum calculation or execution. We must sort these two before execution.
+Our dataset is sorted on **"Ticker"** as well as out **"tickers"** array in code; so CPU calculating very fast returns. But either of these or both are not sorted or someone added one more ticker at the end of array/dataset, then it will be errorsum calculation or execution. We must sort these two before execution.
  
 This is really small dataset compared to real word data, so refacroing is easy. For larger dataset, it will be time consuming. 
 
