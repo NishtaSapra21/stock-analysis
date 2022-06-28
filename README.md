@@ -20,7 +20,7 @@ In 2018, most of the stocks couldn't performed well and gave negative returns ex
 
 - __**Original Script VS Refactored Script**__
 
-From bleow images, it is clear that refactored code takes less execution time than original code. For socks analysis 2017; original scripts takes 0.89 sec whereas refactored script takes 0.14 sec. For socks analysis 2018; original scripts takes 0.96 sec whereas refactored script takes 0.27 sec. Execution times varies depending on how many programs and background processes running simultaneously by OS but refactored time is always less than original. 
+From bleow images, it is clear that refactored code takes less execution time than original code. For socks analysis 2017; original scripts takes **0.89** sec whereas refactored script takes **0.14** sec. For socks analysis 2018; original scripts takes **0.96** sec whereas refactored script takes **0.27** sec. Execution times varies depending on how many programs and background processes running simultaneously by OS but refactored time is always less than original. 
 
 ![AllStockAnalysis2017](https://user-images.githubusercontent.com/107717882/176264181-4ba46f17-c588-4c40-be80-5aad8f0902a1.png)
 
